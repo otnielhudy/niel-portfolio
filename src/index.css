@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "Montserrat", sans-serif;
+
+  --color-ink: #0f1b2d;
+  --color-ink-soft: #1c2b44;
+  --color-paper: #f7f8fa;
+  --color-paper-dim: #eef1f5;
+  --color-line: #e2e5ea;
+  --color-slate: #5b6472;
+  --color-slate-light: #8991a0;
+  --color-approved: #157a54;
+  --color-approved-soft: #e4f3ec;
+  --color-pending: #b4780a;
+  --color-pending-soft: #fbf0dd;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background-color: var(--color-paper);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+}
+
+/* visible keyboard focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ledger-style corner ticks, used sparingly on the hero frame */
+.corner-tick {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-color: var(--color-ink);
+}
