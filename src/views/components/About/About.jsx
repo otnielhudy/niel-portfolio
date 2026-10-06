@@ -4,13 +4,13 @@ import { skillGroups } from "../../../models/skills.model.js";
 
 export default function About() {
   return (
-    <section id="about" className="border-t border-line bg-white px-5 py-20 sm:px-8 sm:py-28">
+    <section id="about" className="border-t border-line px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-6xl">
         <Row gutter={[48, 40]}>
           <Col xs={24} md={11}>
             <p className="font-mono text-[12px] tracking-wide text-slate">01 / ABOUT</p>
             <h2 className="mt-3 font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl">
-              I build the interfaces ops teams trust with real transactions.
+              I build the interfaces for payment gateway websites and mobile applications.
             </h2>
             <p className="mt-6 text-[15px] leading-relaxed text-slate">{profile.summary}</p>
           </Col>

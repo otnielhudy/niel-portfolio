@@ -3,12 +3,12 @@ export const skillGroups = {items: [
   {
     id: "interface",
     label: "Interface",
-    items: ["React.js", "React Router", "Ant Design", "Tailwind CSS", "Responsive Layouts"],
+    items: ["React.js", "React Router", "Ant Design", "Tailwind CSS", "Responsive Layouts", "Flutter", "Mobile Development"],
   },
   {
     id: "data",
-    label: "Data & Forms",
-    items: ["Form.Item Binding", "Conditional Columns", "Status-Tagged Tables", "Reducer State"],
+    label: "Data, Forms, Layout & Navigation",
+    items: ["Form.Item Binding", "Conditional Columns", "Status-Tagged Tables", "Reducer State", "Column Row & Stack Layout", "NavigationStack"],
   },
   {
     id: "output",

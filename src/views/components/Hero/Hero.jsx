@@ -5,14 +5,14 @@ export default function Hero() {
   return (
     <section id="home" className="relative overflow-hidden px-5 pt-16 pb-20 sm:px-8 sm:pt-20 sm:pb-28">
       <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-        <div className="mb-6 flex items-center gap-3 font-mono text-[12px] tracking-wide text-slate">
+        <div className="mb-6 flex items-center gap-3 font-mono text-[12px] tracking-wide text-white">
           <StatusTag status="APPROVED" />
           <span>OPEN TO FRONTEND DEVELOPER ROLES</span>
         </div>
 
-        <p className="font-mono text-[13px] tracking-[0.08em] text-slate">HELLO, I&apos;M</p>
+        <p className="font-mono text-[13px] tracking-[0.08em] text-white">HELLO, I&apos;M</p>
 
-        <h1 className="mt-3 font-display text-4xl font-semibold leading-[1.05] text-ink sm:text-6xl">
+        <h1 className="mt-3 font-display text-4xl font-semibold leading-[1.05] text-white sm:text-6xl">
           {profile.name}
         </h1>
 
@@ -29,10 +29,10 @@ export default function Hero() {
               className="h-full w-full object-cover object-top"
             />
           </div>
-          <ul className="flex flex-col gap-6 w-8 h-8 absolute top-38 -left-24">
+          <ul className="flex flex-col gap-6 w-8 h-8 absolute top-38 lg:-left-24">
             {profile.socials.map((social) => (
               <li key={social.label}>
-                <a href={social.href} className="hover:text-[#26973B]">
+                <a href={social.href} className="bg-white hover:text-[#26973B]">
                   {social.icon}
                 </a>
               </li>
@@ -40,24 +40,24 @@ export default function Hero() {
           </ul>
         </div>
 
-        <h2 className="font-display text-xl font-medium text-ink sm:text-2xl">
-          {profile.role} <span className="text-slate">— {profile.focus}</span>
+        <h2 className="font-display text-xl font-medium text-approved-soft sm:text-2xl">
+          {profile.role} <span className="text-slate-light">— {profile.focus}</span>
         </h2>
 
-        <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-slate sm:text-base">
+        <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-slate-light sm:text-base">
           {profile.tagline}
         </p>
 
         <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
           <a
             href="#work"
-            className="bg-ink px-6 py-3 font-mono text-[12px] font-medium tracking-wide rounded-[8px] text-paper transition-colors hover:bg-ink-soft"
+            className="bg-sky-blue px-6 py-3 font-mono text-[12px] font-medium tracking-wide rounded-[8px] text-paper transition-colors hover:bg-ink-soft"
           >
             VIEW THE WORK
           </a>
           <a
             href="#contact"
-            className="border border-ink px-6 py-3 font-mono text-[12px] font-medium tracking-wide rounded-[8px] text-ink transition-colors hover:bg-ink hover:text-paper"
+            className="border border-sky-blue px-6 py-3 font-mono text-[12px] font-medium tracking-wide rounded-[8px] text-white transition-colors hover:bg-sky-blue hover:text-paper"
           >
             GET IN TOUCH
           </a>

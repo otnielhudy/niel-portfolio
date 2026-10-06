@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-line bg-ink px-5 py-8 text-paper sm:px-8">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 font-mono text-[11px] tracking-wide text-slate-light sm:flex-row">
-        <p>© {new Date().getFullYear()} {profile.name}. Built with React.</p>
+        <p>© {new Date().getFullYear()} {profile.name}.</p>
         {/* <ul className="flex gap-6">
           {profile.socials.map((social) => (
             <li key={social.label}>

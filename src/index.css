@@ -16,6 +16,8 @@
   --color-approved-soft: #e4f3ec;
   --color-pending: #b4780a;
   --color-pending-soft: #fbf0dd;
+  --color-soft-green: #8eB69b;
+  --color-sky-blue:#7ba7d9;
 }
 
 html {
@@ -60,5 +62,5 @@ textarea:focus-visible {
   position: absolute;
   width: 18px;
   height: 18px;
-  border-color: var(--color-ink);
+  border-color: var(--color-approved-soft);
 }

@@ -6,7 +6,7 @@ import StatusTag from "../common/StatusTag.jsx";
 
 export default function Work() {
   return (
-    <section id="work" className="border-t border-line bg-white px-5 py-20 sm:px-8 sm:py-28">
+    <section id="work" className="border-t border-line bg-black px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-6xl">
         <p className="font-mono text-[12px] tracking-wide text-slate">03 / WORK</p>
         <h2 className="mt-3 max-w-xl font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl">

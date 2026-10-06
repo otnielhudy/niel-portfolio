@@ -22,11 +22,11 @@ export default function Navbar() {
   return (
     <header
       className={`sticky top-0 z-40 transition-colors duration-200 ${
-        isScrolled ? "bg-paper/95 backdrop-blur border-b border-line" : "bg-transparent border-b border-transparent"
+        isScrolled ? "bg-black backdrop-blur border-b border-line" : "bg-black border-b border-transparent"
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
-        <Link to="/" className="font-display text-[17px] font-semibold tracking-tight text-ink">
+        <Link to="/" className="font-display text-[17px] font-semibold tracking-tight text-white">
           {profile.shortName}
           <span className="text-approved">.</span>
         </Link>
@@ -38,7 +38,7 @@ export default function Navbar() {
                 <a
                   href={`#${link.id}`}
                   className={`font-mono text-[12px] tracking-wide transition-colors ${
-                    activeSection === link.id ? "text-ink-500" : "text-slate hover:underline"
+                    activeSection === link.id ? "text-soft-green" : "text-white hover:underline"
                   }`}
                 >
                   {activeSection === link.id ? "· " : ""}
@@ -52,7 +52,7 @@ export default function Navbar() {
         {!isMobile ? (
           <a
             href="#contact"
-            className="border border-ink px-4 py-2 font-mono text-[12px] font-medium tracking-wide text-ink transition-colors hover:bg-ink hover:text-paper"
+            className="border border-white px-4 py-2 font-mono text-[12px] font-medium tracking-wide text-white transition-colors hover:bg-soft-green hover:text-paper rounded-[4px]"
           >
             LET&apos;S TALK
           </a>

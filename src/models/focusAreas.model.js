@@ -2,9 +2,9 @@
 export const focusAreas = {items: [
   {
     id: "admin-consoles",
-    title: "Admin & transaction consoles",
+    title: "Dashboard transaction & management roles",
     description:
-      "Dashboards where every row is a real transaction — built to stay readable at volume, not just in a mockup.",
+      "Dashboards where every transaction can be maintained by super admin role. - And also can do transfer by admin & operation role.",
     tag: "CORE",
   },
   {
@@ -28,4 +28,18 @@ export const focusAreas = {items: [
       "Ant Design forms and uploads with field binding, validation, and guards against undefined entries.",
     tag: "INPUT",
   },
+  {
+    id: "mobile-interfaces",
+    title: "Mobile interfaces",
+    description:
+      "Mobile interfaces built with Flutter for both Android and iOS, including responsive layouts and navigation stacks.",
+    tag: "MOBILE",
+  },
+  {
+    id: "landing-pages",
+    title: "Landing pages",
+    description:
+      "Landing pages for various companies, built with React.js and Tailwind CSS.",
+    tag: "WEB",
+  }
 ]};

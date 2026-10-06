@@ -12,14 +12,14 @@ export default function FocusAreas() {
 
         <Row gutter={[1, 1]} className="mt-12 border border-line bg-line">
           {focusAreas.items.map((area) => (
-            <Col key={area.id} xs={24} sm={12} className="bg-white p-7 sm:p-8">
-              <div className="flex items-start justify-between gap-4">
+            <Col key={area.id} xs={24} sm={12} className="bg-black p-7 sm:p-8">
+              <div className="flex items-start justify-between gap-4 p-4">
                 <h3 className="font-display text-lg font-semibold text-ink">{area.title}</h3>
                 <span className="shrink-0 font-mono text-[11px] font-semibold tracking-wide text-approved">
                   {area.tag}
                 </span>
               </div>
-              <p className="mt-3 text-[14px] leading-relaxed text-slate">{area.description}</p>
+              <p className="mt-3 text-[14px] leading-relaxed text-slate p-4">{area.description}</p>
             </Col>
           ))}
         </Row>

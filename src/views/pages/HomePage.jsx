@@ -6,12 +6,12 @@ import Contact from "../components/Contact/Contact.jsx";
 
 export default function HomePage() {
   return (
-    <>
+    <div className="bg-black">
       <Hero />
       <About />
       <FocusAreas />
       <Work />
       <Contact />
-    </>
+    </div>
   );
 }

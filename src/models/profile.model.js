@@ -1,8 +1,8 @@
 // Central profile data. Edit this file to update name, role, and hero copy site-wide.
 import portrait from "../assets/images/niel-portrait.png";
 import resume from "../assets/documents/CV_Otniel_Hudy_PPP.pdf";
-import GithubIcon from "../assets/svg/github_brands_solid_full.svg?react";
-import LinkedInIcon from "../assets/svg/linkedin_in_brands_solid_full.svg?react";
+import GithubIcon from "../assets/svg/github-brands-solid-full-white.svg?react";
+import LinkedInIcon from "../assets/svg/linkedin-brands-solid-full-white.svg?react";
 import EmailIcon from "../assets/svg/email.svg?react";
 
 export const profile = {
@@ -13,9 +13,9 @@ export const profile = {
   location: "Indonesia",
   portrait,
   tagline:
-    "I build the screens where money moves — transaction dashboard for fintech company and landing page for agriculture company",
+    "I build the screens for many transactions — transaction dashboard for fintech company and landing page for agriculture company",
   summary:
-    "Frontend developer focused on React.js admin financial products: single transaction management, bulk transaction management, status-driven data tables, and the small reliability details, clean uploads, exportable records — that keep an ops team's day running. Also landing page for agriculture company",
+    "Frontend developer focused on React.js admin financial products: single transaction management, bulk transaction management, status-driven data tables, and the small reliability details, clean uploads, exportable records. And also landing page for agriculture company",
   email: "nielhudy@gmail.com",
   resumeUrl: resume,
   socials: [
