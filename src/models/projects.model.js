@@ -3,10 +3,10 @@ export const projects = [
   {
     slug: "bulk-disbursement-console",
     status: "APPROVED",
-    title: "Bulk Disbursement Console",
+    title: "Single & Bulk Disbursement Console",
     category: "Fintech · Admin Interface",
     summary:
-      "An internal console for managing bulk-disbursement transactions — status-tagged tables, conditional columns, and printable slips.",
+      "An internal console for managing single & bulk-disbursement transactions — status-tagged tables, conditional columns, printable slips & filtering data.",
     stack: ["React.js", "Ant Design", "jsPDF"],
     problem:
       "Operations staff needed to review large batches of disbursement transactions at a glance, act on them by status, and produce a paper trail without the interface breaking on messy API data.",
@@ -25,19 +25,41 @@ export const projects = [
     title: "Reporting & Exports",
     category: "Internal Tooling",
     summary:
-      "A slot reserved for the next reporting or export-focused build — write-up to follow once it ships.",
-    stack: ["React.js", "Ant Design"],
+      "An action to export data from the admin console to CSV, with a reporting dashboard for tracking export history and status.",
+    stack: ["React.js", "sheetjs-style"],
     detail: false,
     href: "#",
   },
   {
     slug: "form-validation-layer",
     status: "PENDING",
-    title: "Form & Upload Hardening",
+    title: "Form & Upload File Validation",
     category: "Internal Tooling",
     summary:
-      "A slot reserved for a forms-and-uploads case study — write-up to follow once it ships.",
+      "Make Form validation with Ant Design and upload file validation",
     stack: ["React.js", "Ant Design"],
+    detail: false,
+    href: "#",
+  },
+  {
+    slug: "mobile-development-layer",
+    status: "PENDING",
+    title: "Mobile Development",
+    category: "Mobile",
+    summary:
+      "Mobile development with flutter UI and integration with backend API",
+    stack: ["Flutter", "Dart", "Firebase"],
+    detail: false,
+    href: "#",
+  },
+  {
+    slug: "landing-page-website-layer",
+    status: "PENDING",
+    title: "Landing Page Development",
+    category: "Web Development",
+    summary:
+      "Web development with React.js to build landing page for agritech company",
+    stack: ["React.js", "JavaScript", "Tailwind CSS"],
     detail: false,
     href: "#",
   },

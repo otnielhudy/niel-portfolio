@@ -5,14 +5,10 @@ export default function Hero() {
   return (
     <section id="home" className="relative overflow-hidden px-5 pt-16 pb-20 sm:px-8 sm:pt-20 sm:pb-28">
       <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-        <div className="mb-6 flex items-center gap-3 font-mono text-[12px] tracking-wide text-white">
-          <StatusTag status="APPROVED" />
-          <span>OPEN TO FRONTEND DEVELOPER ROLES</span>
-        </div>
 
         <p className="font-mono text-[13px] tracking-[0.08em] text-white">HELLO, I&apos;M</p>
 
-        <h1 className="mt-3 font-display text-4xl font-semibold leading-[1.05] text-white sm:text-6xl">
+        <h1 className="mt-3 font-display text-4xl font-semibold leading-[1.05] text-light-cream sm:text-6xl">
           {profile.name}
         </h1>
 
@@ -40,11 +36,11 @@ export default function Hero() {
           </ul>
         </div>
 
-        <h2 className="font-display text-xl font-medium text-approved-soft sm:text-2xl">
-          {profile.role} <span className="text-slate-light">— {profile.focus}</span>
+        <h2 className="font-display text-xl font-medium text-light-cream sm:text-2xl">
+          {profile.role} <span className="text-white">— {profile.focus}</span>
         </h2>
 
-        <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-slate-light sm:text-base">
+        <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-white sm:text-base">
           {profile.tagline}
         </p>
 

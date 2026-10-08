@@ -8,23 +8,23 @@ export default function About() {
       <div className="mx-auto max-w-6xl">
         <Row gutter={[48, 40]}>
           <Col xs={24} md={11}>
-            <p className="font-mono text-[12px] tracking-wide text-slate">01 / ABOUT</p>
-            <h2 className="mt-3 font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl">
+            <p className="font-mono text-[12px] tracking-wide text-white">01 / ABOUT</p>
+            <h2 className="mt-3 font-display text-3xl font-semibold leading-tight text-light-cream sm:text-4xl">
               I build the interfaces for payment gateway websites and mobile applications.
             </h2>
-            <p className="mt-6 text-[15px] leading-relaxed text-slate">{profile.summary}</p>
+            <p className="mt-6 text-[15px] leading-relaxed text-white">{profile.summary}</p>
           </Col>
 
           <Col xs={24} md={13}>
             <div className="grid grid-cols-1 gap-x-8 gap-y-7 sm:grid-cols-2">
               {skillGroups.items.map((group) => (
                 <div key={group.id}>
-                  <p className="font-mono text-[11px] font-semibold tracking-wide text-slate">
+                  <p className="font-mono text-[11px] font-semibold tracking-wide text-light-cream">
                     {group.label.toUpperCase()}
                   </p>
                   <ul className="mt-3 space-y-2 border-l border-line pl-4">
                     {group.items.map((item) => (
-                      <li key={item} className="text-[14px] text-ink">
+                      <li key={item} className="text-[14px] text-white">
                         {item}
                       </li>
                     ))}

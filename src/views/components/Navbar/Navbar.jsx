@@ -38,7 +38,7 @@ export default function Navbar() {
                 <a
                   href={`#${link.id}`}
                   className={`font-mono text-[12px] tracking-wide transition-colors ${
-                    activeSection === link.id ? "text-soft-green" : "text-white hover:underline"
+                    activeSection === link.id ? "text-light-cream" : "text-white hover:underline"
                   }`}
                 >
                   {activeSection === link.id ? "· " : ""}

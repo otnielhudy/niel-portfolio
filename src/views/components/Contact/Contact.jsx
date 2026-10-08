@@ -9,15 +9,15 @@ export default function Contact() {
   const { status, actions } = useContactForm();
 
   return (
-    <section id="contact" className="border-t border-line bg-ink px-5 py-20 text-paper sm:px-8 sm:py-28">
+    <section id="contact" className="border-t border-line bg-black px-5 py-20 text-light-cream sm:px-8 sm:py-28">
       <div className="mx-auto max-w-6xl">
         <Row gutter={[48, 40]}>
           <Col xs={24} md={10}>
-            <p className="font-mono text-[12px] tracking-wide text-slate-light">04 / CONTACT</p>
+            <p className="font-mono text-[12px] tracking-wide text-white">04 / CONTACT</p>
             <h2 className="mt-3 font-display text-3xl font-semibold leading-tight sm:text-4xl">
               Tell me about your next project.
             </h2>
-            <p className="mt-6 max-w-sm text-[15px] leading-relaxed text-slate-light">
+            <p className="mt-6 max-w-sm text-[15px] leading-relaxed text-white">
               Open to frontend roles and React.js projects — especially admin
               tooling, dashboards, and anything with a lot of data to make
               sense of.
@@ -25,11 +25,11 @@ export default function Contact() {
 
             <dl className="mt-10 space-y-4 font-mono text-[13px]">
               <div className="flex justify-between gap-4 border-b border-white/10 pb-3">
-                <dt className="text-slate-light">EMAIL</dt>
+                <dt className="text-white">EMAIL</dt>
                 <dd>{profile.email}</dd>
               </div>
               <div className="flex justify-between gap-4 border-b border-white/10 pb-3">
-                <dt className="text-slate-light">BASED IN</dt>
+                <dt className="text-white">BASED IN</dt>
                 <dd>{profile.location}</dd>
               </div>
             </dl>
@@ -63,7 +63,7 @@ export default function Contact() {
                 <Row gutter={16}>
                   <Col xs={24} sm={12}>
                     <Form.Item
-                      label={<span className="text-slate-light">Name</span>}
+                      label={<span className="text-white">Name</span>}
                       name="name"
                       rules={[{ required: true, message: "Your name is required" }]}
                     >
@@ -72,7 +72,7 @@ export default function Contact() {
                   </Col>
                   <Col xs={24} sm={12}>
                     <Form.Item
-                      label={<span className="text-slate-light">Email</span>}
+                      label={<span className="text-white">Email</span>}
                       name="email"
                       rules={[
                         { required: true, message: "Your email is required" },
@@ -84,7 +84,7 @@ export default function Contact() {
                   </Col>
                 </Row>
                 <Form.Item
-                  label={<span className="text-slate-light">Message</span>}
+                  label={<span className="text-white">Message</span>}
                   name="message"
                   rules={[{ required: true, message: "Tell me a little about the project" }]}
                 >
@@ -93,7 +93,7 @@ export default function Contact() {
                 <Button
                   htmlType="submit"
                   size="large"
-                  className="!h-12 !w-full !border-0 !bg-paper !font-mono !text-[12px] !font-medium !tracking-wide !text-ink sm:!w-auto sm:!px-8"
+                  className="!h-12 !w-full !border-0 !bg-sky-blue !font-mono !text-[12px] !font-medium !tracking-wide !text-white sm:!w-auto sm:!px-8 rounded[4px]"
                 >
                   SEND MESSAGE
                 </Button>
